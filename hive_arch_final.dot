@@ -1,0 +1,49 @@
+digraph G {
+	// Color Palette
+        // "#1B3139" = Dark Navy
+        // "#FF3621" = Innovation Orange
+        // "#1C4856" = Deep Blue
+        // "#00B379" =  Jade
+        // "#FFAB00" = GoldenRod
+        // "#98102A" = Maroon
+        // style = filled = full box color fill
+        // node [style =filled]; Border color
+	
+	labelloc="t";
+    	label="Hive Architecture";
+ 	rankdir=TB;
+	graph [fontsize=14 fontname="Verdana" compound=true];	
+    	node [shape=box]
+    	compound=true
+	subgraph cluster_0 {
+		label = "Client"
+		color= "#FFAB00";
+		node [style=filled];
+		jdbc, odbc, thrift;					}
+                {jdbc odbc thrift} -> hiveserver2;
+	subgraph cluster_1 {
+		node [style=filled];
+		label = "Hive Services";
+		color="#98102A" ;
+		Driver, hiveserver2, metastore, Compiler, Optimizer, Beeline ;
+      	      	hiveserver2 -> Driver;
+	      	Beeline -> Driver [constraint = none]
+	      	Driver -> {metastore, Compiler, Optimizer} [constraint = none];
+	      
+      	}
+		
+	
+	
+	subgraph cluster_2 {
+		label = "Hadoop";
+                color="#FFAB00";
+                node [style=filled];
+		HDFS, Yarn; // nodes 
+		{rank = same; HDFS; Yarn;}
+}		
+
+
+		Driver -> HDFS, Yarn;
+                
+		
+}

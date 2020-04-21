@@ -1,0 +1,40 @@
+digraph G {
+	// Color Palette
+        // "#1B3139" = Dark Navy
+        // "#FF3621" = Innovation Orange
+        // "#1C4856" = Deep Blue
+        // "#00B379" =  Jade
+        // "#FFAB00" = GoldenRod
+        // "#98102A" = Maroon
+        // style = filled = full box color fill
+        // node [style =filled]; Border color
+	
+	labelloc="t";
+    	label="Impala Architecture";
+ 	rankdir=TB;
+	graph [fontsize=14 fontname="Verdana" compound=true];	
+    	node [shape=box]
+    	compound=true
+	subgraph cluster_0 {
+		label = "Client"
+		color= "#FFAB00";
+		node [style=filled];
+		HUE, "jdbc/odbc", impala_command_line;					}
+                {HUE "jdbc/odbc" impala_command_line} -> 1;
+	subgraph cluster_1 {
+		node [style=filled];
+		label = "Impala Cluster";
+		color="#98102A" ;
+		1 [shape=record    label="{Impala|{HDFS|HBASE}}"];
+		2 [shape=record    label="{Impala|{HDFS|HBASE}}"];
+		3 [shape=record    label="{Impala|{HDFS|HBASE}}"];
+		
+		{1 2} -> 3 [dir="both"];
+		2 -> 1 [dir="both"];
+
+      	}
+		
+	
+	
+		
+}
