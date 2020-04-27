@@ -1,0 +1,25 @@
+{"query" : "select count(*) from world_population_hive_format" , 	"results": 264}
+{"query" : "select count(*) from world_population_hive_format where y1960 IS NULL" , 	"results": 4}
+{"query" : "select count(*) from world_population_hive_format where y1961 IS NULL" , 	"results": 4}
+{"query" : "select count(*) from world_population_hive_format where y1962 IS NULL" , 	"results": 4}
+{"query" : "select count(*) from world_population_hive_format where y1963 IS NULL" , 	"results": 4}
+{"query" : "select count(*) from world_population_hive_format where y1964 IS NULL" , 	"results": 4}
+{"query" : "select count(*) from world_population_hive_format where y1965 IS NULL" , 	"results": 4}
+{"query" : "select count(*) from world_population_hive_format where y1966 IS NULL" , 	"results": 4}
+{"query" : "select count(*) from world_population_hive_format where y1967 IS NULL" , 	"results": 4}
+{"query" : "select count(*) from world_population_hive_format where y1968 IS NULL" , 	"results": 4}
+{"query" : "select count(*) from world_population_hive_format where y1969 IS NULL" , 	"results": 4}
+{"query" : "select count(*) from world_population_hive_format where y1970 IS NULL" , 	"results": 4}
+{"query" : "select count(*) from world_population_hive_format where y1971 IS NULL" , 	"results": 4}
+{"query" : "select count(*) from world_population_hive_format where y1960 IS NOT NULL" , 	"results": 260}
+{"query" : "select count(*) from world_population_hive_format where y1961 IS NOT NULL" , 	"results": 260}
+{"query" : "select count(*) from world_population_hive_format where y1962 IS NOT NULL" , 	"results": 260}
+{"query" : "select count(*) from world_population_hive_format where y1963 IS NOT NULL" , 	"results": 260}
+{"query" : "select count(*) from world_population_hive_format where y1964 IS NOT NULL" , 	"results": 260}
+{"query" : "select count(*) from world_population_hive_format where y1965 IS NOT NULL" , 	"results": 260}
+{"query" : "select count(*) from world_population_hive_format where y1966 IS NOT NULL" , 	"results": 260}
+{"query" : "select count(*) from world_population_hive_format where y1967 IS NOT NULL" , 	"results": 260}
+{"query" : "select count(*) from world_population_hive_format where y1968 IS NOT NULL" , 	"results": 260}
+{"query" : "select count(*) from world_population_hive_format where y1969 IS NOT NULL" , 	"results": 260}
+{"query" : "select count(*) from world_population_hive_format where y1970 IS NOT NULL" , 	"results": 260}
+{"query" : "select count(*) from world_population_hive_format where y1971 IS NOT NULL" , 	"results": 260}
